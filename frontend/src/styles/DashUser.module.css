@@ -1,0 +1,27 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+
+.mainContent {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+.tree{
+    font-family: Arial, sans-serif;
+    background-color: #1D3039;
+    max-width: 200px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: calc(100vh - 136px);
+    overflow: scroll;
+}

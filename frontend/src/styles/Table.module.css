@@ -1,0 +1,103 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.title {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    background-color: #02584e;
+    color: #ddd;
+    border-radius: 5px;
+}
+
+.title h2 {
+    margin-left: 30px;
+}
+
+.thead {
+    display: table-header-group;
+}
+
+.tbody {
+    display: table-row-group;
+}
+
+.tbody tr:first-of-type {
+    border-top: 5px solid white;
+}
+
+.tableRowOdd {
+    background-color: #02584e;
+}
+
+.tableRowEven {
+    background-color: #c08f07;
+}
+
+.tableRowHead {
+    background-color: #333;
+    color: #ddd;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.tableCell {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    color: #fff;
+}
+
+.tableCellButton {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #fff;
+    width: 15%;
+    white-space: nowrap;
+}
+
+.btnDel {
+    background-color: #3DD1E7;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1.40rem;
+    padding: .50rem 1.40rem;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 120px;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btnDel:focus {
+    outline: 0;
+}
+
+.btnDel:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+
+.btnDel:hover:after {
+    bottom: 2px;
+    left: 2px;
+}

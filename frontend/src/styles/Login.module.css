@@ -1,0 +1,240 @@
+.body {
+    flex: 1;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: calc(100% - 85px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow-x: auto;
+}
+
+.formContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 10px;
+    background-color: rgba(51, 51, 51, 0.6);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    height: auto;
+}
+
+.form {
+    max-height: 500px;
+    overflow: auto;
+}
+/* Estilo para personalizar la barra de desplazamiento */
+.form::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+.form::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo de la pista */
+}
+
+.form::-webkit-scrollbar-thumb {
+    background: #888; /* Color de la barra de desplazamiento */
+    border-radius: 4px; /* Bordes redondeados de la barra de desplazamiento */
+}
+
+.form::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color de la barra de desplazamiento al pasar el ratón */
+}
+
+.group {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas */
+    gap: 10px;
+    /* Espacio entre columnas */
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        /* Una sola columna en dispositivos móviles */
+    }
+}
+
+.groupTitle {
+    background-color: #999;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    z-index: 1;
+}
+
+.formGroup {
+    margin: 10px 20px;
+}
+
+.label {
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.inputField {
+    width: 250px;
+    height: 26px;
+    border-radius: 5px;
+    border: 1px;
+}
+
+
+
+.ballon {
+    background-color: #3498db;
+    max-width: 200px;
+    color: #ffffff;
+    margin: 15px 20px 0px 15px;
+    position: relative;
+    border-radius: 5px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 15px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent #3498db transparent;
+    }
+}
+
+.alert {
+    margin-inline: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 400;
+    font-size: small;
+    word-wrap: break-word;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.passwordGroup {
+    display: flex;
+}
+
+.inputPassword {
+    width: 224px;
+    height: 26px;
+    border: 1px;
+    border-radius: 5px 0 0 5px;
+}
+
+.buttonBackground {
+    background-color: #999;
+    display: inline-block;
+    border-radius: 0px 5px 5px 0px;
+
+    &:hover {
+        background-color: #666;
+    }
+}
+
+.formSubmit {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.buttonSubmit {
+    padding: 8px 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        background-color: #0056b3;
+    }
+
+    &:active {
+        background-color: #003c80;
+    }
+}
+
+/* START FILE INPUT */
+.containerInput {
+    text-align: center;
+    background: #282828;
+    border-top: 5px solid #c39f77;
+    border-radius: 6px;
+    height: 26px;
+    width: 250px;
+
+    &:hover {
+        background-color: #c39f77;
+        border-top: 5px solid #282828;
+    }
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile+label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.inputfile+label svg {
+    width: 1em;
+    height: 15px;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.iborrainputfile {
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Lato';
+}
+
+.inputfile1+label {
+    color: #fff;
+    background-color: #c39f77;
+}
+
+.inputfile1:focus+label,
+.inputfile1.has-focus+label,
+.inputfile1+label:hover {
+    background-color: #9f8465;
+}
+
+/** END FILE INPUT */

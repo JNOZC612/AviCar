@@ -1,0 +1,25 @@
+.treeNode {
+    color: antiquewhite;
+    margin-left: 20px;
+    background-color: #4C6374;
+    margin-top: 5px;
+    border-top: solid white 4px;
+    border-bottom: solid #999 3px;
+    padding-left: 10px;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.nodeContent {
+    cursor: pointer;
+    display: flexbox;
+    align-items: center;
+}
+
+.toggleIcon {
+    margin-right: 5px;
+}
+
+.nodeChildren {
+    margin-left: 20px;
+}
